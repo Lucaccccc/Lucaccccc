@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>I Miei Social & Info</title>
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #0e0e10;
+      color: #ffffff;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      padding: 20px;
+    }
+    .card {
+      background: #18181b;
+      border: 1px solid #26262c;
+      padding: 30px;
+      border-radius: 20px;
+      max-width: 420px;
+      width: 100%;
+      text-align: center;
+      box-shadow: 0 15px 35px rgba(0,0,0,0.6);
+    }
+    h1 { font-size: 26px; margin-bottom: 12px; }
+    p.bio { color: #adadb8; font-size: 15px; line-height: 1.5; margin-bottom: 20px; }
+    .discord-username {
+      background: #1f2023;
+      border: 1px solid #5865f2;
+      color: #7289da;
+      padding: 10px 14px;
+      border-radius: 10px;
+      font-weight: bold;
+      font-size: 14px;
+      margin-bottom: 25px;
+      display: inline-block;
+    }
+    .links-container { display: flex; flex-direction: column; gap: 12px; }
+    .btn {
+      display: block;
+      padding: 14px;
+      border-radius: 12px;
+      text-decoration: none;
+      font-weight: 600;
+      color: #ffffff;
+      font-size: 15px;
+      transition: transform 0.2s, opacity 0.2s;
+    }
+    .btn:hover { transform: translateY(-2px); opacity: 0.9; }
+    .yt { background-color: #ff0000; }
+    .twitch { background-color: #9146ff; }
+    .discord-server { background-color: #5865f2; }
+  </style>
+</head>
+<body>
+
+  <div class="card">
+    <h1>Ciao! 👋</h1>
+    <p class="bio">Benvenuto nel mio spazio! Qui trovi tutte le mie piattaforme, il mio server della community e i miei contenuti live.</p>
+    
+    <!-- CAMBIA QUESTO CON IL TUO NOME DISCORD -->
+    <div class="discord-username">Discord: @tuoname</div>
+
+    <div class="links-container">
+      <!-- SOSTITUISCI I LINK TRA LE VIRGOLETTE CON I TUOI LINK REALI -->
+      <a href="https://youtube.com" target="_blank" class="btn yt">YouTube</a>
+      <a href="https://twitch.tv" target="_blank" class="btn twitch">Twitch</a>
+      <a href="https://discord.gg" target="_blank" class="btn discord-server">Entra nel Server Discord</a>
+    </div>
+  </div>
+
+</body>
+</html>
